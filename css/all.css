@@ -1,0 +1,99 @@
+.container{
+
+width: 150px;
+height: 80px;
+background: #444;
+border-radius: 10px;
+
+position: relative;
+}
+
+
+.container:after{
+	content: '';
+	position: absolute;
+
+
+	width: 0;
+	height: 0;
+	border-top: 10px solid #444;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+bottom: -10px;
+left: 60px;
+
+}
+
+
+.kvadrat{
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	background: #0f0;
+
+	border-radius: 30px;
+}
+
+
+
+.image{
+    width: 700px;
+    height: 400px;
+    border:3px solid #999;
+
+
+
+    background-image: url(https://image.flaticon.com/icons/svg/145/145812.svg),url(https://www.toptal.com/designers/subtlepatterns/patterns/diamond_upholstery.png);
+
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+   background-size: 40%, 100%
+
+
+}
+
+
+.batton{
+	display: inline-block;
+	margin: 20px;
+	width: 100px;
+	height: 100px;
+
+	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/extra_clean_paper.png);
+	cursor: pointer;
+
+
+	border-radius: 50%;
+
+	box-shadow: 0 3px 20px rgba(0,0,0,.25), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0
+	rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1);
+
+}
+
+
+.batton:hover{
+	box-shadow:inset 0 0 20px rgba(0,0,0,.25), inset 0 2px 0 rgba(255,255,255,.4),  0 0 20px rgba(0,0,0,.1);
+}
+
+
+.batton::after{
+	content: '';
+	width: 100px;
+	height: 100px;
+	display: block;
+	opacity: .7;
+}
+
+
+.as::after{
+	background: url(http://www.defaulticon.com/images/icons32x32/chat.png?itok=0_HivTrl) center no-repeat;
+}
+
+.ad::after{
+	background: url(http://www.defaulticon.com/images/icons32x32/controls-alt-2.png?itok=CvdiQeCU) center no-repeat;
+}
+
+.af::after{
+	background: url(http://www.defaulticon.com/images/icons32x32/cup.png?itok=eYBY0QMm) center no-repeat;
+}

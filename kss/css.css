@@ -1,0 +1,106 @@
+body{
+	font: 1em "PT Sans", "Arial";
+	text-transform: uppercase;
+}
+
+
+/**************** Main menu*****************/
+
+.nav{
+	list-style: none;
+	margin: 30px;
+	padding: 0;
+	width: 500px;
+	overflow: hidden;
+	opacity: .5;
+}
+
+.nav:hover{
+	opacity: 1;
+}
+
+.nav li{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+
+	transition: width .2s ease-in-out, height .2s ease-in-out .2s;
+}
+
+.nav li:hover{
+	width: 200px;
+	height: 175px;
+}
+
+
+
+
+.nav li a{
+	display: block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	background: #bbb;
+	margin: 1px;
+	color: #fff;
+	padding-left:15px;
+	cursor: pointer;
+
+
+
+
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;;
+
+}
+
+.nav li a:hover{
+	background: #5FFAFF;
+}
+
+.nav li a:first-child {
+	font-size: 1.1em;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	text-indent: 36px;
+}
+
+
+.nav li a:first-child::before{
+	content: '';
+	position: absolute;
+	display: block;
+	height: 32px;
+	width: 32px;
+	top:9px;
+	left:5px;
+}
+
+
+
+
+.main-menu a:first-child::before{
+    background: url(http://www.defaulticon.com/images/icons32x32/store.png?itok=ccj-fnUj) center no-repeat;
+}
+
+.settings a:first-child::before{
+    background: url(http://www.defaulticon.com/images/icons32x32/settings.png?itok=f3WwNrKf) center no-repeat;
+}
+
+.link a:first-child::before{
+    background: url(http://www.defaulticon.com/images/icons32x32/link.png?itok=ZWITPB3E) center no-repeat;
+}
+
+.search a:first-child::before{
+    background: url(http://www.defaulticon.com/images/icons32x32/search_0.png?itok=eqsHkE5C) center no-repeat;
+}
+
+
+
+
+
+
+
+
